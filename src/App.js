@@ -8,7 +8,7 @@ function App() {
   const[inputText, setInputText] = useState("");
   return (
     <div className="App">
-      <header> <h1> Saliha's Todo List </h1> </header>
+      <header> <h1> Saliha's Todo List For Developer </h1> </header>
       <Form />
       <TodoList/>
     </div>
