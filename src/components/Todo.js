@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Todo = ({text}) => {
+const Todo = ({text,todos,setTodos, todo}) => {
 
-    const deleteHandler =() => {
-
+    const deleteHandler = () => {
+        setTodos(todos.filter((el) => el.id !== todo.id))
     }
 
     return(

@@ -9,7 +9,7 @@ const TodoList = (props) => {
         <ul className="todo-list">
         {
           props.todos.map((todo) =>
-             (<Todo setTodos={props.setTodos} key={todo.id} text={todo.text} />
+             (<Todo setTodos={props.setTodos} todos={props.todos} key={todo.id} text={todo.text} todo={todo} />
             ))
         }
         </ul>
